@@ -1,0 +1,148 @@
+{
+  "model_config": {
+    "batch_size": 1,
+    "epochs": 10,
+    "lr": 0.0005,
+    "weight_decay": 1e-05,
+    "patience": 10,
+    "delta_threshold": 0.03,
+    "augmentation": true,
+    "model_type": "enhanced",
+    "loss_type": "improved",
+    "save_dir": "models",
+    "log_file": "training_log.json"
+  },
+  "evaluation_summary": {
+    "total_clips": 24,
+    "mean_song_length": 203.2125,
+    "std_song_length": 5.530695593684408
+  },
+  "metrics": {
+    "mae_normalized": 0.29294975893571973,
+    "mean_confidence": 0.00033601482330899063,
+    "confidence_std": 4.878432741935279e-08,
+    "confidence_accuracy_correlation": 0.10945853679269017,
+    "recall_at_1s": 0.0,
+    "recall_at_2s": 0.0416666679084301,
+    "recall_at_3s": 0.0416666679084301,
+    "recall_at_5s": 0.0833333358168602,
+    "recall_at_10s": 0.0833333358168602,
+    "recall_at_15s": 0.1666666716337204,
+    "expected_calibration_error": 0.08299732099355121,
+    "mae_seconds": 59.41234429092146,
+    "median_error_seconds": 56.710042622685435,
+    "std_error_seconds": 39.440806490402316,
+    "max_error_seconds": 134.5830563366413,
+    "min_error_seconds": 1.4169431567192063,
+    "error_p50_seconds": 56.710042622685435,
+    "error_p75_seconds": 90.22803703323007,
+    "error_p90_seconds": 116.45703461974858,
+    "error_p95_seconds": 123.475985643249,
+    "error_p99_seconds": 132.18643701526895,
+    "mae_conf_0-0.3": 59.41234429092146,
+    "count_conf_0-0.3": 24,
+    "optimal_confidence_threshold": 0.5
+  },
+  "failure_analysis": [
+    {
+      "rank": 1,
+      "clip_id": "tu_me_dejaste_de_querer_c_tangana_youtube_youtube_clip11.npz",
+      "error_seconds": 134.5830563366413,
+      "confidence": 0.0003359628899488598,
+      "song_length": 197.2,
+      "predicted_time": 33.41694459319115,
+      "target_time": 168.00000092983245,
+      "error_percentage": 68.24698597192764
+    },
+    {
+      "rank": 2,
+      "clip_id": "chopsuey_system_of_a_down_youtube_youtube_clip01.npz",
+      "error_seconds": 124.16297233067453,
+      "confidence": 0.00033605878707021475,
+      "song_length": 208.3,
+      "predicted_time": 131.1629725933075,
+      "target_time": 7.000000262632966,
+      "error_percentage": 59.60776396095753
+    },
+    {
+      "rank": 3,
+      "clip_id": "tu_me_dejaste_de_querer_c_tangana_youtube_youtube_clip10.npz",
+      "error_seconds": 119.58306108117102,
+      "confidence": 0.0003359628899488598,
+      "song_length": 197.2,
+      "predicted_time": 33.41694459319115,
+      "target_time": 153.00000567436217,
+      "error_percentage": 60.640497505664825
+    },
+    {
+      "rank": 4,
+      "clip_id": "chopsuey_system_of_a_down_youtube_youtube_clip02.npz",
+      "error_seconds": 109.16297287642956,
+      "confidence": 0.00033605878707021475,
+      "song_length": 208.3,
+      "predicted_time": 131.1629725933075,
+      "target_time": 21.999999716877937,
+      "error_percentage": 52.406612038612366
+    },
+    {
+      "rank": 5,
+      "clip_id": "tu_me_dejaste_de_querer_c_tangana_youtube_youtube_clip09.npz",
+      "error_seconds": 104.5830540716648,
+      "confidence": 0.0003359628899488598,
+      "song_length": 197.2,
+      "predicted_time": 33.41694459319115,
+      "target_time": 137.99999866485595,
+      "error_percentage": 53.03400307893753
+    },
+    {
+      "rank": 6,
+      "clip_id": "chopsuey_system_of_a_down_youtube_youtube_clip03.npz",
+      "error_seconds": 92.16297168433667,
+      "confidence": 0.00033605878707021475,
+      "song_length": 208.3,
+      "predicted_time": 131.1629725933075,
+      "target_time": 39.00000090897083,
+      "error_percentage": 44.24530565738678
+    },
+    {
+      "rank": 7,
+      "clip_id": "tu_me_dejaste_de_querer_c_tangana_youtube_youtube_clip08.npz",
+      "error_seconds": 89.58305881619452,
+      "confidence": 0.0003359628899488598,
+      "song_length": 197.2,
+      "predicted_time": 33.41694459319115,
+      "target_time": 123.00000340938567,
+      "error_percentage": 45.427514612674706
+    },
+    {
+      "rank": 8,
+      "clip_id": "chopsuey_system_of_a_down_youtube_youtube_clip04.npz",
+      "error_seconds": 78.1629696071148,
+      "confidence": 0.00033605878707021475,
+      "song_length": 208.3,
+      "predicted_time": 131.1629725933075,
+      "target_time": 53.000002986192705,
+      "error_percentage": 37.5242292881012
+    },
+    {
+      "rank": 9,
+      "clip_id": "tu_me_dejaste_de_querer_c_tangana_youtube_youtube_clip07.npz",
+      "error_seconds": 73.58305369019507,
+      "confidence": 0.0003359628899488598,
+      "song_length": 197.2,
+      "predicted_time": 33.41694459319115,
+      "target_time": 106.99999828338622,
+      "error_percentage": 37.31392174959182
+    },
+    {
+      "rank": 10,
+      "clip_id": "chopsuey_system_of_a_down_nico_nico_clip01.npz",
+      "error_seconds": 69.16297226250171,
+      "confidence": 0.00033605878707021475,
+      "song_length": 208.3,
+      "predicted_time": 131.1629725933075,
+      "target_time": 62.00000033080578,
+      "error_percentage": 33.20353925228118
+    }
+  ]
+}
