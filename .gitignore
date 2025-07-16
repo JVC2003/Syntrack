@@ -3,3 +3,4 @@ clips_syntrack/
 venv/
 .env/
 env/
+embeddings/
