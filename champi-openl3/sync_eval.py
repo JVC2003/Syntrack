@@ -44,6 +44,6 @@ for idx, row in df.iterrows():
 # Guardar resultados
 df["segundo_predecido"] = predictions
 df['segundo_inicio'] = df['segundo_inicio'].apply(parse_time_to_seconds)
-df.to_excel("results.xlsx", index=False)
+df.to_excel("results2.xlsx", index=False)
 print("✅ Resultados guardados en 'results.xlsx")
 
